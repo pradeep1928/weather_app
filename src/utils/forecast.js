@@ -11,7 +11,8 @@ const forecast = (address, cb) => {
         } else {
             cb(undefined, {
                 description: body.current.weather_descriptions[0],
-                temperature: body.current.temperature
+                temperature: body.current.temperature,
+                humidity: body.current.humidity
     
             })
         }
