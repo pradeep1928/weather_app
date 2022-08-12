@@ -28,9 +28,9 @@ weatherForm.addEventListener('submit', (e) => {
             msg_1.textContent = data.error
         } else {
             msg_1.textContent = data.location
-            msg_2.textContent = data.forecast.description
-            msg_3.textContent = data.forecast.temperature
-            msg_4.textContent = data.forecast.humidity
+            msg_2.textContent = `Description: ${data.forecast.description}`
+            msg_3.textContent = `Temperature: ${data.forecast.temperature}`
+            msg_4.textContent = `Humidity: ${data.forecast.humidity}`
 
 
         }
